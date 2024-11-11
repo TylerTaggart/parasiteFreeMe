@@ -1,0 +1,220 @@
+/* Parasite Cards Section */
+#parasites {
+    margin-top: 40px;
+}
+
+#parasites h2 {
+    font-size: 2.2em;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.parasite-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.parasite-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.parasite-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.parasite-card h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.parasite-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.symptoms-list {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #666;
+    font-size: 1em;
+}
+
+.symptoms-list li {
+    margin-bottom: 5px;
+}
+
+.parasite-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* General Content Section */
+.content-section {
+    margin-top: 40px;
+}
+
+.content-section h2 {
+    font-size: 2.2em;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.text-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.text-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.text-content ul li {
+    margin-bottom: 10px;
+}
+
+.responsive-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Recommended Products Section */
+.recommended-products {
+    margin-top: 30px;
+}
+
+.recommended-products h4 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+.product-card h5 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.product-card p:last-child {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .parasite-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .responsive-img {
+        margin: 0 auto 20px;
+    }
+
+    .text-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .product-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .parasite-card {
+        flex: 1 1 100%;
+    }
+
+    .text-content p {
+        font-size: 1em;
+    }
+
+    .product-card h5 {
+        font-size: 1.2em;
+    }
+
+    .product-card p {
+        font-size: 0.9em;
+    }
+}
