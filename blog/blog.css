@@ -103,6 +103,119 @@
     background-color: #388E3C;
 }
 
+/* Accordion Styling */
+.accordion {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background-color: #fff;
+    color: #4CAF50;
+    font-size: 1.2em;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #e6f7e6;
+}
+
+.accordion-header.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff;
+    padding: 0 15px;
+    color: #666;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+/* Table Styling */
+.text-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-content table th, 
+.text-content table td {
+    text-align: left;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+.text-content table th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text-content table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.text-content table tr:hover {
+    background-color: #e6f7e6;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .text-content table th, 
+    .text-content table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+/* Styling for Lists (Unordered and Ordered) */
+.text-content ul, .text-content ol {
+    margin: 20px 0;
+    padding-left: 40px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.text-content ul li, .text-content ol li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.text-content ul li::marker {
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+/* Bold Styling for List Headers */
+.text-content ul li strong, 
+.text-content ol li strong {
+    color: #333;
+    font-weight: bold;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .blog-card {
@@ -120,6 +233,52 @@
 
     .text-content {
         text-align: center;
+    }
+
+    .text-content table th, 
+    .text-content table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+/* Styling for Lists (Unordered and Ordered) */
+.text-content ul, .text-content ol {
+    margin: 20px 0;
+    padding-left: 40px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.text-content ul li, .text-content ol li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.text-content ul li::marker {
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+/* Bold Styling for List Headers */
+.text-content ul li strong, 
+.text-content ol li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Lists */
+@media (max-width: 768px) {
+    .text-content ul, .text-content ol {
+        padding-left: 20px;
+    }
+
+    .text-content ul li, .text-content ol li {
+        font-size: 1em;
+    }
+
+    .text-content ul li::marker {
+        font-size: 1em;
     }
 }
 
