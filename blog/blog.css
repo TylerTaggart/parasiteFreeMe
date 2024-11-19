@@ -242,46 +242,6 @@
     }
 }
 
-/* Styling for Lists (Unordered and Ordered) */
-.text-content ul, .text-content ol {
-    margin: 20px 0;
-    padding-left: 40px;
-    line-height: 1.8;
-    color: #666;
-}
-
-.text-content ul li, .text-content ol li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-.text-content ul li::marker {
-    color: #4CAF50;
-    font-size: 1.2em;
-}
-
-/* Bold Styling for List Headers */
-.text-content ul li strong, 
-.text-content ol li strong {
-    color: #333;
-    font-weight: bold;
-}
-
-/* Responsive Lists */
-@media (max-width: 768px) {
-    .text-content ul, .text-content ol {
-        padding-left: 20px;
-    }
-
-    .text-content ul li, .text-content ol li {
-        font-size: 1em;
-    }
-
-    .text-content ul li::marker {
-        font-size: 1em;
-    }
-}
-
 @media (max-width: 480px) {
     .blog-card {
         flex: 1 1 100%;
