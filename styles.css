@@ -112,6 +112,13 @@ header {
     position: relative;
 }
 
+.container h3 {
+    font-size: 28px;
+    color: #4CAF50;
+    text-align: left;
+    margin-top: 10px;
+}
+
 .container h2::after {
     content: '';
     display: block;
@@ -202,6 +209,220 @@ footer {
 
 .social-media a:hover {
     color: #4CAF50;
+}
+
+/* Accordion Styling */
+.accordion {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background-color: #fff;
+    color: #4CAF50;
+    font-size: 1.2em;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #e6f7e6;
+}
+
+.accordion-header.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff;
+    padding: 0 15px;
+    color: #666;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+/* Styling for Lists (Unordered and Ordered) */
+ul, ol {
+    padding-left: 40px;
+    line-height: 1.8;
+    color: #666;
+}
+
+ul li, .text-content ol li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul li::marker {
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+.download {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 90px auto;
+    max-width: 900px;
+}
+
+.download h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.download p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.download .cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: white;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download .cta-button:hover {
+    background-color: #e4f4e4;
+    color: #4CAF50;
+}
+
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10%;
+}
+
+/* General Modal Styles */
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Checkbox Styling */
+.modal-content .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+    gap: 10px; /* Space between checkbox and label */
+}
+
+.modal-content .checkbox input[type="checkbox"] {
+    width: auto;
+    height: auto;
+}
+
+/* Submit Button */
+.modal-content .cta-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.modal-content .cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Privacy Note */
+.modal-content .privacy-note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Close Button */
+.modal-content .close {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    font-size: 24px; /* Large and noticeable */
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: #f44336; /* Red on hover or focus */
 }
 
 /* Mobile Responsiveness */
