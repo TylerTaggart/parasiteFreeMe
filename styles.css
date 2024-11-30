@@ -160,7 +160,7 @@ header {
 
 .card p {
     font-size: 1em;
-    color: #666;
+    color: #333;
 }
 
 .read-more {
@@ -252,7 +252,7 @@ footer {
     transition: max-height 0.3s ease-out;
     background-color: #fff;
     padding: 0 15px;
-    color: #666;
+    color: #333333;
 }
 
 .accordion-content p {
@@ -265,7 +265,7 @@ footer {
 ul, ol {
     padding-left: 40px;
     line-height: 1.8;
-    color: #666;
+    color: #333333;
 }
 
 ul li, .text-content ol li {
@@ -438,6 +438,10 @@ ul li::marker {
 
     .card {
         flex: 1 1 calc(50% - 20px);
+    }
+
+    #hero {
+        height: 40vh;
     }
 
     .hero-content h2 {
