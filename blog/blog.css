@@ -184,6 +184,13 @@
     background-color: #e6f7e6;
 }
 
+.responsive-image {
+    max-width: 100%; /* Ensures the image never exceeds the container width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
 /* Responsive Table */
 @media (max-width: 768px) {
     .text-content table th, 
