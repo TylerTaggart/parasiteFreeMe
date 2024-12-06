@@ -185,10 +185,46 @@
 }
 
 .responsive-image {
-    max-width: 100%; /* Ensures the image never exceeds the container width */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    display: block; /* Ensures the image is treated as a block-level element */
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto; /* Centers the image horizontally */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+    margin: 15px 0;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+/* Heading Styles within .container */
+.container h2, 
+.container h3, 
+.container h4 {
+    color: #4CAF50; /* Green color for headings */
+    margin: 0 0 16px; /* Consistent spacing below headings */
+    line-height: 1.4; /* Compact spacing between lines for headings */
+}
+
+/* Specific Heading Sizes */
+.container h2 {
+    font-size: 28px; /* Prominent main heading */
+    font-weight: bold; /* Strong emphasis */
+    text-transform: capitalize; /* Clean capitalization for titles */
+}
+
+.container h3 {
+    font-size: 24px; /* Subheading size */
+    font-weight: bold; /* Maintain emphasis */
+    text-transform: capitalize;
+}
+
+.container h4 {
+    font-size: 20px; /* Smaller subheading size */
+    font-weight: bold; /* Subtle emphasis */
+    text-transform: none; /* Maintain default text case */
 }
 
 /* Responsive Table */
