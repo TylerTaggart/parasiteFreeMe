@@ -66,18 +66,49 @@
     </header>
 
     <section class="container">
+        <div class="filter-controls">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="parasite education">Parasite Education</option>
+                <option value="symptoms and diagnosis">Symptoms & Diagnosis</option>
+                <option value="natural remedies">Natural Remedies</option>
+                <option value="prevention tips">Prevention Tips</option>
+                <option value="cleansing programs">Cleansing Programs</option>
+            </select>
+        </div>
+
         <h2>Our Latest Blog Posts</h2>
         <div class="blog-cards">
             <!-- Blog Card Nov 29th 2024 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="parasite education">
+                <a href="gut-health-and-parasite-infections.html">
+                    <img src="../images/gutMicrobiome.jpg">
+                    <h3>Gut Health and Parasite Infections: Tips for a Healthy Gut & Parasite Cleanse</h3>
+                    <p>Learn about symptoms, gut-healthy foods, supplements, and when to consider a 30-day parasite cleanse for better digestion and overall health.</p>
+                </a>
+            </div>
+
+            <!-- Blog Card Nov 29th 2024 -->
+            <div class="blog-card" data-category="cleansing programs">
+                <a href="how-to-choose-the-right-parasite-cleanse-for-you.html">
+                    <img src="../images/ladyTakingParasiteCleanse.jpg">
+                    <h3>How to Choose the Right Parasite Cleanse for You: A Step-by-Step Guide for Natural Detox</h3>
+                    <p>Discover the best parasite cleanse for your needs! Learn about natural detox options, supplements, and herbal cleanses tailored to different lifestyles and symptoms.</p>
+                </a>
+            </div>
+
+            <!-- Blog Card Nov 29th 2024 -->
+            <div class="blog-card" data-category="parasite education">
                 <a href="what-is-giardia-symptoms-treatment-prevention.html">
                     <img src="../images/Giardia.jpg">
                     <h3>What is Giardia? Learn About Giardiasis, Symptoms, and Prevention for Humans and Pets</h3>
                     <p>Discover what Giardia is, how it spreads, and the symptoms of giardiasis in humans, dogs, and cats.</p>
                 </a>
             </div>
+
             <!-- Blog Card Nov 29th 2024 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="parasite education symptoms and diagnosis cleansing programs">
                 <a href="top-10-signs-you-need-parasite-cleanse.html">
                     <img src="../images/Signs of parasitic infection.jpg">
                     <h3>Top 10 Signs You May Need a Parasite Cleanse | Symptoms of Parasitic Infection</h3>
@@ -85,7 +116,7 @@
                 </a>
             </div>
             <!-- Blog Card Nov 19th 2024 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="cleansing programs">
                 <a href="what-is-a-parasite-cleanse-guide.html">
                     <img src="../images/herbal supplements and vegetables used in parasite cleanses.jpg" alt="Blog Post 1">
                     <h3>What is a Parasite Cleanse? A Beginner's Guide to Natural Parasite Detox and Cleansing</h3>
@@ -93,7 +124,7 @@
                 </a>
             </div>
             <!-- Blog Card 1 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="cleansing programs">
                 <a href="understanding-parasite-cleanses.html">
                     <img src="../images/cryptosporidiosis.png" alt="Blog Post 1">
                     <h3>Understanding Parasite Cleanses: What You Need to Know</h3>
@@ -101,7 +132,7 @@
                 </a>
             </div>
             <!-- Blog Card 2 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="natural remedies">
                 <a href="natural-remedies-for-parasite-infections.html">
                     <img src="../images/black-walnut-product3.png" alt="Blog Post 2">
                     <h3>Top 10 Natural Remedies for Parasite Infections</h3>
@@ -109,7 +140,7 @@
                 </a>
             </div>
             <!-- Blog Card 3 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="prevention tips">
                 <a href="preventing-parasite-infections.html">
                     <img src="../images/environment.png" alt="Blog Post 3">
                     <h3>How to Prevent Parasite Infections: Tips for Everyday Life</h3>
@@ -117,7 +148,7 @@
                 </a>
             </div>
             <!-- Blog Card 4 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="natural remedies">
                 <a href="natural-remedies-for-parasite-infections.html">
                     <img src="../images/goldenseal-product1.png" alt="Blog Post 4">
                     <h3>The Best Herbs for a Parasite Cleanse</h3>
@@ -125,7 +156,7 @@
                 </a>
             </div>
             <!-- Blog Card 5 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="parasite education">
                 <a href="signs-you-might-have-a-parasite-infection.html">
                     <img src="../images/parasite-gut.png" alt="Blog Post 5">
                     <h3>Signs You Might Have a Parasite Infection</h3>
@@ -133,7 +164,7 @@
                 </a>
             </div>
             <!-- Blog Card 6 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="natural remedies">
                 <a href="how-to-use-essential-oils-to-fight-parasites.html">
                     <img src="../images/eucalyptus-oil-product2.png" alt="Blog Post 6">
                     <h3>How to Use Essential Oils to Fight Parasites</h3>
@@ -141,7 +172,7 @@
                 </a>
             </div>
             <!-- Blog Card 7 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="parasite education">
                 <a href="the-connection-between-diet-and-parasite-infections.html">
                     <img src="../images/food.png" alt="Blog Post 7">
                     <h3>The Connection Between Diet and Parasite Infections</h3>
@@ -149,7 +180,7 @@
                 </a>
             </div>
             <!-- Blog Card 8 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="parasite education">
                 <a href="common-myths-about-parasites-debunked.html">
                     <img src="../images/pinworm.png" alt="Blog Post 8">
                     <h3>Common Myths About Parasites Debunked</h3>
@@ -157,7 +188,7 @@
                 </a>
             </div>
             <!-- Blog Card 9 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="cleansing programs">
                 <a href="why-regular-parasite-cleansing-is-essential.html">
                     <img src="../images/gut.png" alt="Blog Post 9">
                     <h3>Why Regular Parasite Cleansing is Essential</h3>
@@ -165,7 +196,7 @@
                 </a>
             </div>
             <!-- Blog Card 10 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="symptoms and diagnosis">
                 <a href="ivermectin-and-fenbendazole-for-treating-parasites-in-humans.html">
                     <img src="../images/ivermectin.png" alt="Blog Post 10">
                     <h3>Ivermectin and Fenbendazole For Treating Parasites In Humans</h3>
@@ -173,7 +204,7 @@
                 </a>
             </div>
             <!-- Blog Card 11 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="natural remedies">
                 <a href="natural-supplements-for-parasite-prevention.html">
                     <img src="../images/supplements.png" alt="Blog Post 11">
                     <h3>Natural Supplements for Parasite Prevention</h3>
@@ -181,7 +212,7 @@
                 </a>
             </div>
             <!-- Blog Card 12 -->
-            <div class="blog-card">
+            <div class="blog-card" data-category="prevention tips">
                 <a href="holistic-health-practices-to-prevent-parasites.html">
                     <img src="../images/lifestyle.png" alt="Blog Post 12">
                     <h3>Holistic Health Practices to Prevent Parasites</h3>
@@ -190,6 +221,27 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterDropdown = document.getElementById('category-filter');
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            filterDropdown.addEventListener('change', function () {
+                const selectedCategory = this.value.toLowerCase(); // Get the selected category in lowercase
+
+                blogCards.forEach(card => {
+                    const categories = card.getAttribute('data-category').toLowerCase(); // Get all categories of the card in lowercase
+                    if (selectedCategory === 'all' || categories.includes(selectedCategory)) {
+                        card.style.display = 'block'; // Show card if category matches or "All" is selected
+                    } else {
+                        card.style.display = 'none'; // Hide card if it doesn't match
+                    }
+                });
+            });
+        });
+    </script>
+
 <br>
     <footer>
         <div class="container">

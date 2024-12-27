@@ -19,6 +19,12 @@ body {
     margin-top: 60px; /* Adjusts margin above each section */
 }
 
+.container p {
+    margin: 15px 0;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
